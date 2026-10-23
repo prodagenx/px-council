@@ -1,0 +1,27 @@
+# px-council persona index
+
+| id | name | role | summary | best_for |
+|---|---|---|---|---|
+| psychologist | Psychologist | debater | How people form, share, and lose goals and understanding; goal-setting and bias research | alignment, behavior change, decision-making, adoption, requirements clarity |
+| product-leader | Product Leader | debater | How an idea becomes requirements, roadmaps, shipped features, and where it breaks | product strategy, requirements, discovery, prioritization |
+| entrepreneur | Entrepreneur | debater | Decisions under uncertainty: runway, pivots, premature commitment | startups, pivots, market need, founder decisions |
+| engineer | Engineer | debater | What ambiguity and technical risk cost when a plan reaches builders and AI coding agents | technical risk, rework, build cost, AI-assisted development |
+| skeptical-investor | Skeptical Investor | red-team | Finds the reasons to pass; ranks deal-killing objections | fundraising, pitch, market sizing, go-to-market |
+| senior-architect | Senior Architect | debater | System boundaries, integration, and whether it can be built and run at scale | architecture, scalability, integration, technical debt, build-vs-buy |
+| ceo | CEO | debater | Strategy, positioning, and whether this is the one thing worth focus | strategy, positioning, focus, board narrative, market timing |
+| cfo | CFO | debater | Unit economics, cash, and whether the numbers hold | unit economics, pricing, cash runway, financial model, ROI |
+| cio | CIO | debater | Enterprise adoption: security, integration, governance, procurement | enterprise sales, security review, procurement, integration, governance |
+| cpo | CPO | debater | Portfolio product strategy, outcomes over output, roadmap discipline | product strategy, roadmap, OKRs, portfolio, product org |
+| caio | CAIO | debater | Where AI changes the problem, where it is hype, running it responsibly | AI strategy, LLM products, agents, model risk, AI governance |
+| senior-frontend-developer | Senior Front-end Developer | debater | User-facing build: feasibility, performance, accessibility, mockup-to-UI gap | UI feasibility, performance, accessibility, design-to-code handoff |
+| expert-dba | Expert DBA | debater | Data model, integrity, and costs that appear only as data grows | data model, integrity, migrations, performance, data governance |
+| senior-data-analyst | Senior Data Analyst | debater | Whether the evidence means what the council says it means | metrics, experiment design, statistics, evidence quality, measurement |
+| senior-backend-developer | Senior Back-end Developer | debater | Services, APIs, reliability, and running it at 3 a.m. | APIs, reliability, operations, scaling, implementation cost |
+| creative-director | Creative Director | debater | Brand, story, and whether the idea is distinct enough to be chosen | brand, messaging, differentiation, storytelling, launch |
+| cx-lead | CX Lead | debater | Customer end-to-end experience, support load, and retention | customer experience, onboarding, retention, support, journey mapping |
+| target-customer | Target Customer | debater | The buyer or user, speaking only from their own job, budget, and alternatives | market need, willingness to pay, adoption, user research, pricing |
+| ciso | CISO | debater | Security, data protection, and the questions that stop a deal or a launch | security, data protection, threat model, vendor risk, AI security |
+| legal-compliance | Legal & Compliance | debater | Regulatory, contractual, IP, and liability exposure, especially data and AI | regulation, privacy, IP, contracts, AI governance, liability |
+| sales-leader | Sales Leader | debater | Can this be sold, by whom, to whom, in what cycle, against what objection | go-to-market, sales cycle, pricing, objections, channel |
+| coo | COO | debater | What has to exist, staffed and repeatable, for this to run after launch | operations, process, staffing, scaling delivery, implementation |
+| quality-engineer | Quality Engineer (QE) | red-team | Asks how anyone will know it works, and finds the failure modes nobody planned to test | testability, acceptance criteria, release risk, reliability, AI output quality, test strategy |

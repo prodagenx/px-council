@@ -1,0 +1,6 @@
+.obsidian/
+.px-council/
+CONTRIBUTING-*.md
+*.zip
+.DS_Store
+Thumbs.db

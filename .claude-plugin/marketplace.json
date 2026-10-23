@@ -1,0 +1,16 @@
+{
+  "name": "prodagenx",
+  "owner": {
+    "name": "prodagenx",
+    "url": "https://github.com/prodagenx"
+  },
+  "plugins": [
+    {
+      "name": "px-council",
+      "source": "./",
+      "description": "A persona council that debates a claim under evidence rules, with a standing devil's advocate.",
+      "version": "1.0.0",
+      "license": "MIT"
+    }
+  ]
+}

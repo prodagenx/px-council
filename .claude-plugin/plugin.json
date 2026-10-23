@@ -1,0 +1,13 @@
+{
+  "name": "px-council",
+  "version": "1.0.0",
+  "description": "A persona council that debates a claim under evidence rules: openings, cross-examination, pre-mortem, majority vote, synthesis, and a standing devil's advocate.",
+  "author": {
+    "name": "prodagenx",
+    "url": "https://github.com/prodagenx"
+  },
+  "homepage": "https://github.com/prodagenx/px-council",
+  "repository": "https://github.com/prodagenx/px-council",
+  "license": "MIT",
+  "keywords": ["council", "debate", "personas", "red-team", "evidence", "decision-making"]
+}

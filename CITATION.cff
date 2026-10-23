@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use px-council, please cite it as below."
+title: "px-council: a persona council framework for Claude"
+type: software
+authors:
+  - name: prodagenx
+repository-code: "https://github.com/prodagenx/px-council"
+license: MIT
+version: 1.0.0
+date-released: 2026-10-22
