@@ -4,7 +4,7 @@ description: The moderator for the px-council framework. Runs a structured, evid
 license: MIT
 metadata:
   author: prodagenx
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # px-council-mod — Moderator
@@ -94,6 +94,9 @@ Run `px-council-adv` Task C on the draft. Append the dissent unedited as
 the final section. Do not soften it or respond to it in the document.
 
 Save as `<context_dir>/<slug>-<output_type>.md` and show the path.
+Then hand back to `px-council` Step 6 (executive summary), passing the
+context file path, the log path and this document's path. If the user
+started this moderator directly, offer the executive summary instead.
 
 ## Re-runs
 
