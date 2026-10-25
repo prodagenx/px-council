@@ -16,6 +16,12 @@ By [prodagenx](https://github.com/prodagenx). MIT licensed.
    - Round 4, vote on every claim that was attacked and not conceded
    - Round 5, synthesis into a memo, then the Advocate's dissent appended unedited
 4. **Output**: a document with surviving claims, vote tallies, "what we no longer claim", open `[VERIFY]` items, and the evidence to gather next.
+5. **Executive summary** (`/px-council`, Step 6): each seat scores both options against weighted criteria in a logged scoring round, and the Advocate reviews the scores. The summary covers:
+   - each seat's pro, con and key condition
+   - a decision matrix with an overall rating per option
+   - a decision: proceed if the leader's margin clears a configurable threshold (`decision_margin_pct`, default 10%), otherwise defer
+   - next steps
+   - a glossary that explains every claim, round and evidence ID
 
 The **Advocate** (`px-council-adv`) sits on every council outside the seat count and never votes. Its job is to find the weakest claim and say whether it would sign the result.
 
@@ -25,7 +31,7 @@ Seats are told never to invent a source: an uncertain citation is written `[VERI
 
 | Skill | Does |
 |---|---|
-| `px-council` | Entry point: questionnaire, saved context file, roster, hand-off |
+| `px-council` | Entry point and controller: questionnaire, saved context file, roster, hand-off, executive summary |
 | `px-council-mod` | Moderator: runs the rounds, keeps the log, writes the document |
 | `px-council-adv` | The Advocate: probes, pre-mortem, dissent |
 | `px-council-personas` | The persona library: list, add, edit, contribute |
