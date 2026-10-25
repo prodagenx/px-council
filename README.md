@@ -32,9 +32,9 @@ Seats are told never to invent a source: an uncertain citation is written `[VERI
 
 **About the `px-` prefix:** every prodagenx skill starts with `px-`, so prodagenx skills sort together in `.claude/skills/` and are easy to tell apart from skills you get elsewhere. The four council skills refer to each other by these names, so keep the prefix if you install them by copying the folders.
 
-## Personas (23)
+## Personas (24)
 
-psychologist, product-leader, entrepreneur, engineer, skeptical-investor (red team), senior-architect, ceo, cfo, cio, cpo, caio, senior-frontend-developer, expert-dba, senior-data-analyst, senior-backend-developer, creative-director, cx-lead, target-customer, ciso, legal-compliance, sales-leader, coo, quality-engineer (red team).
+psychologist, product-leader, entrepreneur, engineer, skeptical-investor (red team), senior-architect, ceo, cfo, cio, cpo, caio, senior-frontend-developer, expert-dba, senior-data-analyst, senior-backend-developer, creative-director, cx-lead, target-customer, ciso, legal-compliance, sales-leader, coo, quality-engineer (red team), vp-engineering.
 
 See [`skills/px-council-personas/index.md`](skills/px-council-personas/index.md) for each persona's lens and best uses.
 

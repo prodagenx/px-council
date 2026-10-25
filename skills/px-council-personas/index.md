@@ -25,3 +25,4 @@
 | sales-leader | Sales Leader | debater | Can this be sold, by whom, to whom, in what cycle, against what objection | go-to-market, sales cycle, pricing, objections, channel |
 | coo | COO | debater | What has to exist, staffed and repeatable, for this to run after launch | operations, process, staffing, scaling delivery, implementation |
 | quality-engineer | Quality Engineer (QE) | red-team | Asks how anyone will know it works, and finds the failure modes nobody planned to test | testability, acceptance criteria, release risk, reliability, AI output quality, test strategy |
+| vp-engineering | VP Engineering | debater | Approach, maintainability, and long-term scalability of the engineering path chosen | architecture approach, maintenance cost, long-term scalability, migration path, technical debt, industry best practice, emerging technology |
