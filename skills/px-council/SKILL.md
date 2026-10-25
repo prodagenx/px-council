@@ -106,6 +106,7 @@ Display:
 
 Ask: "Run the council with this setup?" On yes, invoke `px-council-mod`
 and pass it the context file path and the list of persona file paths.
+When px-council-mod has saved its document, continue to Step 6.
 On no, return to whichever step the user wants to change.
 
 ## Step 6 — Executive summary
@@ -115,7 +116,10 @@ executive summary of an existing run. Fill
 `templates/executive-summary-template.md`.
 
 **6a — Settings.** Confirm with the user:
-- The two options being compared (from the thesis).
+- The two options being compared (from the thesis). If the thesis is a
+  single claim rather than a choice, compare "Adopt the claim" against
+  "Status quo" (what happens if nothing changes), and name both options
+  that way in the summary.
 - Criteria and weights (1–5). Propose 6–8 criteria derived from the
   claims that survived the resolution vote, plus one criterion for
   "what works today" so the incumbent option can score for what it
@@ -133,9 +137,7 @@ line of evidence per score citing the log or a source. Then give one
 sentence Pro (for the claim), one sentence Con (against the claim), and
 your one key condition. Do not raise any confidence above what the log
 records."
-Then run `px-council-adv` with the scores and this task: "Review the
-scores. Name any score the log does not support and any place the
-scores exceed the log's confidence. Max 200 words. Do not score."
+Then run `px-council-adv` Task D (score review) on the scores.
 Append all of it to the log as Round 6.
 
 **6c — Compute and write.**
