@@ -4,7 +4,7 @@ description: The moderator for the px-council framework. Runs a structured, evid
 license: MIT
 metadata:
   author: prodagenx
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # px-council-mod — Moderator
