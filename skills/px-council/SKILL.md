@@ -135,20 +135,31 @@ executive summary of an existing run. Fill
 - Criteria and weights (1–5). Propose 6–8 criteria derived from the
   claims that survived the resolution vote, plus one criterion for
   "what works today" so the incumbent option can score for what it
-  already delivers. Show each criterion's source claim IDs.
+  already delivers. Show each criterion's source claim IDs. Check that
+  no two criteria score the same fact (for example a staffing criterion
+  and a "what works today" criterion that both rest on the same team
+  roster); merge them or narrow one so each fact is scored once.
 - `decision_margin_pct`: read the context file frontmatter first, then
   `<context_dir>/config.md`, otherwise use 10. Show the value and its
   source.
 
 **6b — Scoring round (Round 6).** If the log has no Round 6 for this run,
 run it. Spawn one isolated subagent per seat, in parallel where possible,
-with: the context file, the seat's persona file, the moderator's final
-document, the full log, and this task:
+with: the context file, the seat's persona file, that seat's view of
+the log, and this task:
 "Score each criterion 1–5 for each option from your lens, with one
 line of evidence per score citing the log or a source. Then give one
 sentence Pro (for the claim), one sentence Con (against the claim), and
 your one key condition. Do not raise any confidence above what the log
 records."
+A seat's view is the log through Round 3, the Round 4 list of claims
+with each result (accepted, accepted with caveats, rejected) but no
+tally, and that seat's own Round 4 votes. Leave out the other seats'
+Round 4 votes and reasoning, the synthesis, the Advocate's dissent, and
+the moderator's final document. Seats that read the same votes and
+synthesis converge on them and score alike. Save each view as
+`<context_dir>/<slug>-round6-view-<seat id>.md`; if inputs are passed as
+file paths, list only that seat's view, never the full log or the memo.
 Then run `px-council-adv` Task D (score review) on the scores.
 Append all of it to the log as Round 6.
 

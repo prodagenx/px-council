@@ -1,6 +1,6 @@
 # px-council
 
-A persona council for Claude. Give it a claim, and a council of expert personas debates it under strict evidence rules: openings, cross-examination, a pre-mortem, a majority vote on every contested claim, and a written synthesis that keeps the dissent. A full run uses millions of tokens see [Cost of a run](#cost-of-a-run), so use it sparingly and save it for your most important decisions.
+A persona council for Claude. Give it a claim, and a council of expert personas debates it under strict evidence rules: openings, cross-examination, a pre-mortem, a majority vote on every contested claim, and a written synthesis that keeps the dissent. A full run uses millions of tokens (see [Cost of a run](#cost-of-a-run)), so use it sparingly and save it for your most important decisions.
 
 By [prodagenx](https://github.com/prodagenx). MIT licensed.
 
@@ -16,7 +16,7 @@ By [prodagenx](https://github.com/prodagenx). MIT licensed.
    - Round 4, vote on every claim that was attacked and not conceded
    - Round 5, synthesis into a memo, then the Advocate's dissent appended unedited
 4. **Output**: a document with surviving claims, vote tallies, "what we no longer claim", open `[VERIFY]` items, and the evidence to gather next.
-5. **Executive summary** (`/px-council`, Step 6): each seat scores both options against weighted criteria in a logged scoring round, and the Advocate reviews the scores. The summary covers:
+5. **Executive summary** (`/px-council`, Step 6): each seat scores both options against weighted criteria in a logged scoring round, each seeing the debate and its own votes but not the other seats' votes or the memo, so the scores stay independent, and the Advocate reviews the scores. The summary covers:
    - each seat's pro, con and key condition
    - a decision matrix with an overall rating per option
    - a decision: proceed if the leader's margin clears a configurable threshold (`decision_margin_pct`, default 10%), otherwise defer

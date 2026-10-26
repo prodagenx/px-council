@@ -59,6 +59,11 @@ Write a review, max 200 words:
 - Any score the log does not support, quoting the seat's evidence line
 - Any place the scores exceed the confidence the log records
 - Any criterion where the seats agree without anyone citing evidence
+- Any criterion where every seat gives the same scores and no evidence
+  line draws on the seat's own lens; name it as agreement the log does
+  not explain
+- Any criterion scored as a tie where the evidence says it is unpriced,
+  untested, or a gate; say it is unknown, not tied
 Do not score, and do not propose different numbers. The review is
 appended to the log as written.
 
