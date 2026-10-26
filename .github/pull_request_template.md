@@ -8,4 +8,4 @@
 - [ ] Body is under 250 words and describes a lens, not a conclusion
 - [ ] Every research lead is a real source I checked, or is marked `[VERIFY]`
 - [ ] Required counterpoint is included
-- [ ] Row added to `skills/px-council-personas/index.md`
+- [ ] Row added to `skills/px-council-personas/index.md` in alphabetical order by id

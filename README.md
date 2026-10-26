@@ -1,6 +1,6 @@
 # px-council
 
-A persona council for Claude. Give it a claim, and a council of expert personas debates it under strict evidence rules: openings, cross-examination, a pre-mortem, a majority vote on every contested claim, and a written synthesis that keeps the dissent.
+A persona council for Claude. Give it a claim, and a council of expert personas debates it under strict evidence rules: openings, cross-examination, a pre-mortem, a majority vote on every contested claim, and a written synthesis that keeps the dissent. A full run uses millions of tokens (see [[#Cost of a run]]), so use it sparingly and save it for your most important decisions.
 
 By [prodagenx](https://github.com/prodagenx). MIT licensed.
 
@@ -62,6 +62,24 @@ Copy the four folders in `skills/` into `~/.claude/skills/` (all projects) or `.
 **Claude.ai**
 
 Zip each folder in `skills/` and upload it under Settings, Capabilities, Skills. Claude.ai has no subagents, so the moderator runs each seat as a separate labelled message and tells you that seat independence is weaker.
+
+## Cost of a run
+
+A council run is token-heavy, because every seat runs as its own isolated subagent and each one reads the context, its persona, and the growing log.
+
+| Council size | Subagent calls | Approximate tokens |
+| ------------ | -------------- | ------------------ |
+| 3 seats      | 22             | about 2.1M         |
+| 5 seats      | 34             | about 3.3M         |
+
+Calls scale as 6N + 4 for N seats. That covers the debate rounds, the Advocate's four tasks, and the scoring round for the executive summary. Each call uses roughly 87k to 120k tokens, mostly input. These figures come from one five-seat test run, so treat them as a guide. What you pay depends on the model and on prompt caching.
+
+To spend less:
+- Use 3 seats when the thesis does not need five lenses.
+- Re-run only Round 3 when the context changes, instead of a full re-run.
+- Reuse a saved context file rather than starting fresh.
+
+In Claude.ai chat, where subagents are not available, seats run in one conversation. That uses fewer tokens, but the seats are less independent.
 
 ## Where files go
 
