@@ -142,13 +142,17 @@ executive summary of an existing run. Fill
 
 **6b — Scoring round (Round 6).** If the log has no Round 6 for this run,
 run it. Spawn one isolated subagent per seat, in parallel where possible,
-with: the context file, the seat's persona file, the moderator's final
-document, the full log, and this task:
+with: the context file, the seat's persona file, the full log, and this
+task:
 "Score each criterion 1–5 for each option from your lens, with one
 line of evidence per score citing the log or a source. Then give one
 sentence Pro (for the claim), one sentence Con (against the claim), and
 your one key condition. Do not raise any confidence above what the log
 records."
+Do not pass the moderator's final document. Seats that read the same
+synthesis converge on its framing and score alike, so each seat scores
+from the log before it sees the memo. If inputs are passed as file
+paths, leave the memo off the list of files the seat may read.
 Then run `px-council-adv` Task D (score review) on the scores.
 Append all of it to the log as Round 6.
 

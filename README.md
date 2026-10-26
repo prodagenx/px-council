@@ -16,7 +16,7 @@ By [prodagenx](https://github.com/prodagenx). MIT licensed.
    - Round 4, vote on every claim that was attacked and not conceded
    - Round 5, synthesis into a memo, then the Advocate's dissent appended unedited
 4. **Output**: a document with surviving claims, vote tallies, "what we no longer claim", open `[VERIFY]` items, and the evidence to gather next.
-5. **Executive summary** (`/px-council`, Step 6): each seat scores both options against weighted criteria in a logged scoring round, and the Advocate reviews the scores. The summary covers:
+5. **Executive summary** (`/px-council`, Step 6): each seat scores both options against weighted criteria in a logged scoring round, working from the debate log rather than the memo so the scores stay independent, and the Advocate reviews the scores. The summary covers:
    - each seat's pro, con and key condition
    - a decision matrix with an overall rating per option
    - a decision: proceed if the leader's margin clears a configurable threshold (`decision_margin_pct`, default 10%), otherwise defer
