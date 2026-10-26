@@ -85,7 +85,15 @@ file path and a 5-line summary. Ask for confirmation before continuing.
    votes, so a seated `role: red-team` persona (for example
    `skeptical-investor`) is optional: recommend one only when the
    audience makes its domain objections valuable.
-3. The user may:
+3. If the thesis compares two options ("X is better than Y"), assign at
+   least one seat to argue for each option, choosing seats whose lens
+   suits that side, and show the assignment in the recommendation. The
+   Advocate attacks claims but never builds the case for the other
+   option, so without an assigned seat the losing option is scored only
+   on the attacks made against it. For a single-claim thesis, if every
+   recommended seat is likely to favour the claim, say so and offer to
+   assign one seat to argue against it.
+4. The user may:
    - **Confirm** the recommendation.
    - **Override** by naming other personas from the index.
    - **Request a new persona.** Follow "Creating a persona" in
@@ -101,11 +109,12 @@ Display:
 - Context file path
 - Thesis (verbatim)
 - Output type and evidence bar
-- Roster: persona id, name, role, file path
+- Roster: persona id, name, role, file path, and assigned position if any
 - Standing: Advocate (px-council-adv) — always on, not counted, no vote
 
 Ask: "Run the council with this setup?" On yes, invoke `px-council-mod`
-and pass it the context file path and the list of persona file paths.
+and pass it the context file path, the list of persona file paths, and
+any assigned positions.
 When px-council-mod has saved its document, continue to Step 6.
 On no, return to whichever step the user wants to change.
 

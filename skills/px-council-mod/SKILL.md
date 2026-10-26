@@ -15,7 +15,8 @@ and write the final document. The Advocate (`px-council-adv`) runs on
 every council; you call it, you never replace it.
 
 Inputs (from px-council): the context file path and the persona file
-paths. If either is missing, stop and tell the user to run `/px-council`.
+paths, plus any assigned positions. If the context file or persona paths
+are missing, stop and tell the user to run `/px-council`.
 
 ## Seat isolation
 
@@ -32,6 +33,11 @@ For the Advocate, item 2 is the full text of `px-council-adv/SKILL.md`
 and item 4 is the council log.
 
 Subagents receive only what you pass them, so always include 1 and 2.
+Where the subagent can read files, you may pass the paths of these files
+instead of their text, with an instruction to read each one in full
+before doing anything else. The seat then sees the same text without
+it being pasted into every prompt. Name every file the seat may read and
+tell it to read no others.
 Run seats of the same round in parallel when the environment allows.
 Where subagents are not available (for example Claude.ai chat), run each seat as a
 separate message and label it; say so to the user because independence
@@ -50,7 +56,12 @@ roster. The Advocate is not a seat and is not counted in N.
 Task: "State how strongly the thesis holds through your lens and give
 your 3–5 strongest tagged claims. Max 300 words. Include your required
 counterpoint." A seated `role: red-team` persona instead states the
-three conditions under which the thesis fails.
+three conditions under which the thesis fails. A seat with an assigned
+position gets this task instead: "Make the strongest case for <assigned
+option> through your lens, with your 3–5 strongest tagged claims. Max
+300 words. Include your required counterpoint." An assigned position
+applies to Round 1 and to defending those claims in Rounds 2–3. In the
+Round 4 vote, every seat votes on the evidence.
 
 **Round 1.5 — Advocate probes**
 Run `px-council-adv` Task A on all openings. Deliver each question to
