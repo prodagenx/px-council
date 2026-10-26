@@ -1,6 +1,6 @@
 # px-council
 
-A persona council for Claude. Give it a claim, and a council of expert personas debates it under strict evidence rules: openings, cross-examination, a pre-mortem, a majority vote on every contested claim, and a written synthesis that keeps the dissent. A full run uses millions of tokens (see [[#cost-of-a-run]]), so use it sparingly and save it for your most important decisions.
+A persona council for Claude. Give it a claim, and a council of expert personas debates it under strict evidence rules: openings, cross-examination, a pre-mortem, a majority vote on every contested claim, and a written synthesis that keeps the dissent. A full run uses millions of tokens see [Cost of a run](#cost-of-a-run), so use it sparingly and save it for your most important decisions.
 
 By [prodagenx](https://github.com/prodagenx). MIT licensed.
 
