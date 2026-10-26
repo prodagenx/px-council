@@ -111,6 +111,9 @@ Display:
 - Output type and evidence bar
 - Roster: persona id, name, role, file path, and assigned position if any
 - Standing: Advocate (px-council-adv) — always on, not counted, no vote
+- Estimated cost: about 6N + 4 subagent calls for N seats (22 for 3
+  seats, 34 for 5), roughly 2M to 3.5M tokens, including the Step 6
+  scoring round. See "Cost of a run" in the README.
 
 Ask: "Run the council with this setup?" On yes, invoke `px-council-mod`
 and pass it the context file path, the list of persona file paths, and
