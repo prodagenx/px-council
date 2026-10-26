@@ -4,7 +4,7 @@ description: The moderator for the px-council framework. Runs a structured, evid
 license: MIT
 metadata:
   author: prodagenx
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # px-council-mod — Moderator
@@ -17,6 +17,11 @@ every council; you call it, you never replace it.
 Inputs (from px-council): the context file path and the persona file
 paths, plus any assigned positions. If the context file or persona paths
 are missing, stop and tell the user to run `/px-council`.
+If the user started this moderator directly rather than through
+px-council Step 5, state the estimated cost before Round 1 and ask
+whether to proceed: the debate is about 5N + 3 subagent calls (28 for
+5 seats, roughly 2.7M tokens), the executive summary adds N + 1 more,
+and re-running one round costs less.
 
 ## Seat isolation
 

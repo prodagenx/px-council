@@ -22,13 +22,13 @@ Delete this comment. -->
 
 ## 1. Decision at a glance
 
-| | |
-|---|---|
-| **Decision** | [[one sentence]] |
+|                    |                                                                                                         |
+| ------------------ | ------------------------------------------------------------------------------------------------------- |
+| **Decision**       | [[one sentence]]                                                                                        |
 | **Overall rating** | [[Option A]]: [[weighted total]] / [[max]] ([[%]]) · [[Option B]]: [[weighted total]] / [[max]] ([[%]]) |
-| **Margin** | [[points]] ([[% of max]]) against a threshold of [[decision_margin_pct]]% ([[source]]) |
-| **Confidence** | [[Low / Medium / High, as rated in the log]] |
-| **Conditions** | [[numbered list of conditions the decision depends on]] |
+| **Margin**         | [[points]] ([[% of max]]) against a threshold of [[decision_margin_pct]]% ([[source]])                  |
+| **Confidence**     | [[Low / Medium / High, as rated in the log]]                                                            |
+| **Conditions**     | [[numbered list of conditions the decision depends on]]                                                 |
 
 ## 2. The claim in plain language
 

@@ -11,7 +11,7 @@ Persona contributions are the most useful. Fixes to the skills are welcome too.
    - Starter research leads must be real, named sources you have checked. If you are not sure, write `[VERIFY] <topic>`. Never invent a citation.
    - Include a required counterpoint: the strongest argument against the persona's own lens.
    - `role` is `debater` or `red-team`.
-3. Add one row to `skills/px-council-personas/index.md`.
+3. Add the row to `skills/px-council-personas/index.md` in alphabetical order by id.
 4. Open a pull request titled `persona: <name>`.
 
 The `px-council-personas` skill can do steps 1 to 4 for you: say "add a persona", then accept the offer to contribute it.

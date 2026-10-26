@@ -47,7 +47,7 @@ that does not exist.
    must be real, named sources the author knows; otherwise write
    "[VERIFY] <topic to look up>". Never invent citations.
 3. Show the draft. Save only on approval.
-4. Append a row to index.md.
+4. Add the row to index.md in alphabetical order by id.
 5. Offer the contribution flow below.
 
 ## Editing

@@ -4,7 +4,7 @@ description: The standing Devil's Advocate for the px-council framework — a pe
 license: MIT
 metadata:
   author: prodagenx
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # px-council-adv — The Advocate
