@@ -72,7 +72,7 @@ A council run is token-heavy, because every seat runs as its own isolated subage
 | 3 seats      | 22             | about 2.1M         |
 | 5 seats      | 34             | about 3.3M         |
 
-Calls scale as 6N + 4 for N seats. That covers the debate rounds, the Advocate's four tasks, and the scoring round for the executive summary. Each call uses roughly 87k to 120k tokens, mostly input. These figures come from one five-seat test run, so treat them as a guide. What you pay depends on the model and on prompt caching.
+Calls scale as 6N + 4 for N seats. That covers the debate rounds, the Advocate's four tasks, and the scoring round for the executive summary. Each call uses roughly 87k to 120k tokens, mostly input, almost regardless of the task: most of it is the fixed cost of starting a subagent, the context and persona files add only a few thousand, and later rounds cost a little more as the log grows. So the number of calls drives the cost, and passing seat inputs as file paths makes the prompts tidier without changing it much. These figures come from test runs, so treat them as a guide; what you pay depends on the model and on prompt caching.
 
 To spend less:
 - Use 3 seats when the thesis does not need five lenses.
