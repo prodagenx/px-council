@@ -4,7 +4,7 @@ description: Entry point and controller for the px-council framework. Runs the s
 license: MIT
 metadata:
   author: prodagenx
-  version: "1.2.0"
+  version: "1.2.1"
 ---
 
 # px-council — Council entry point
